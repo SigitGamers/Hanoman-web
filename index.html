@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanoman Build - Jasa Build Lobby Minecraft</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-lg">Hanoman Build</a>
+            <div class="block lg:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex space-x-4">
+                <a href="#" class="text-white">Home</a>
+                <a href="#paket-harga" class="text-white">Paket Harga</a>
+                <a href="#testimoni" class="text-white">Testimoni</a>
+                <a href="#kontak" class="text-white">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-700 text-white py-20 text-center">
+        <h1 class="text-4xl font-bold">Selamat Datang di Hanoman Build</h1>
+        <p class="mt-4">Jasa Build Lobby Minecraft yang Profesional dan Berkualitas</p>
+    </header>
+
+    <!-- Carousel Slider -->
+    <div id="carousel" class="relative w-full h-64 overflow-hidden">
+        <div class="carousel-inner">
+            <img src="https://via.placeholder.com/1024x400" class="w-full h-64 object-cover" alt="Slider 1">
+            <img src="https://via.placeholder.com/1024x400" class="w-full h-64 object-cover" alt="Slider 2">
+            <img src="https://via.placeholder.com/1024x400" class="w-full h-64 object-cover" alt="Slider 3">
+        </div>
+    </div>
+
+    <!-- Paket Harga -->
+    <section id="paket-harga" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Paket Harga</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Paket Hemat</h3>
+                    <p class="text-gray-600">Lobby Simple</p>
+                    <p class="text-blue-700 text-2xl font-bold mt-4">Rp 100.000</p>
+                    <button class="bg-blue-700 text-white px-4 py-2 mt-6 rounded">Pesan Sekarang</button>
+                </div>
+                <!-- Paket 2 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Paket Premium</h3>
+                    <p class="text-gray-600">Lobby Detail & Custom</p>
+                    <p class="text-blue-700 text-2xl font-bold mt-4">Rp 250.000</p>
+                    <button class="bg-blue-700 text-white px-4 py-2 mt-6 rounded">Pesan Sekarang</button>
+                </div>
+                <!-- Paket 3 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Paket Custom</h3>
+                    <p class="text-gray-600">Lobby Sesuai Permintaan</p>
+                    <p class="text-blue-700 text-2xl font-bold mt-4">Harga Nego</p>
+                    <button class="bg-blue-700 text-white px-4 py-2 mt-6 rounded">Hubungi Kami</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Post -->
+    <section id="product-post" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Produk Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white shadow-lg rounded-lg">
+                    <img src="https://via.placeholder.com/300x200" class="w-full h-48 object-cover" alt="Product 1">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Lobby Desert</h3>
+                        <p class="text-gray-600">Build lobby bertema padang pasir.</p>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white shadow-lg rounded-lg">
+                    <img src="https://via.placeholder.com/300x200" class="w-full h-48 object-cover" alt="Product 2">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Lobby Forest</h3>
+                        <p class="text-gray-600">Build lobby bertema hutan.</p>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white shadow-lg rounded-lg">
+                    <img src="https://via.placeholder.com/300x200" class="w-full h-48 object-cover" alt="Product 3">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Lobby Sci-Fi</h3>
+                        <p class="text-gray-600">Build lobby bertema futuristik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Slide -->
+    <section id="testimoni" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Testimoni Pelanggan</h2>
+            <div class="carousel-inner">
+                <div class="bg-white shadow-lg p-6 rounded-lg mx-auto max-w-lg">
+                    <p class="text-gray-600">"Build yang luar biasa, sangat sesuai dengan keinginan saya!"</p>
+                    <p class="text-blue-700 font-bold mt-4">- Ahmad, Jakarta</p>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-lg mx-auto max-w-lg mt-6">
+                    <p class="text-gray-600">"Pekerjaan cepat dan hasil memuaskan, highly recommended!"</p>
+                    <p class="text-blue-700 font-bold mt-4">- Putri, Bandung</p>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-lg mx-auto max-w-lg mt-6">
+                    <p class="text-gray-600">"Build sangat detail dan estetis, saya sangat puas!"</p>
+                    <p class="text-blue-700 font-bold mt-4">- Budi, Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-blue-700 py-8">
+        <div class="container mx-auto text-center text-white">
+            <h3 class="text-xl font-bold">Kontak Kami</h3>
+            <p class="mt-4">Email: support@hanomanbuild.com</p>
+            <p class="mt-2">WhatsApp: +62 812-3456-7890</p>
+            <div class="mt-6">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="bg-blue-800 text-center text-white py-4">
+        <p>&copy; 2024 Hanoman Build. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
